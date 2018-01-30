@@ -28,8 +28,8 @@ public class PriceIncreaseFormController {
     private ProductService productService;
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(@Valid PriceIncrease priceIncrease, BindingResult result)
-    {
+    public String onSubmit(@Valid PriceIncrease priceIncrease, BindingResult result){
+    	
         if (result.hasErrors()) {
             return "priceincrease";
         }
